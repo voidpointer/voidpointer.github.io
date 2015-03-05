@@ -1,0 +1,15 @@
+body {
+	background-color:#aaa;
+	margin:0;
+}
+.page {
+	background-color:#fff;
+	margin:0 10%;
+	border-left:1px solid #888;
+	border-right:1px solid #888;
+	min-height:100vh;
+}
+.bio-pic {
+	text-align:center;
+	padding:20px 0;
+}
