@@ -1,3 +1,7 @@
+<?
+require "spoof.php";
+die;
+?>
 <!doctype html>
 <html>
 	<head>
