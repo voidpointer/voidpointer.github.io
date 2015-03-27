@@ -1,8 +1,13 @@
 <!doctype html>
 <html>
 	<head>
+		<title>www.iamryanjones.com</title>
 		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="style.css">
+		<meta property="og:title" content="Ryan Jones">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://www.iamryanjones.com">
+		<meta property="og:image" content="i/ryan_jones1.jpg">
 	</head>
 	<body>
 		<div class="page">
@@ -16,6 +21,9 @@
 					<header>
 						<h1>Overview</h1>
 					</header>
+					Sixteen years experience developing, maintaining, and troubleshooting software. Experience includes various 
+					programming languages, development environments, operating systems, libraries, and algorithms.  I love to learn 
+					about new technologies.
 				</section>
 				<section>
 					<header>
@@ -33,6 +41,8 @@
 					<div class="skills-section">Source control:</div>
 					<div class="skills-value">git, Subversion</div>
 					<div style="clear:both;"></div>
+					<br>
+					I am also very familiar with Linux/OSX terminal commands.  
 				</section>
 				<section>
 					<header>
@@ -156,6 +166,15 @@
 					</div>
 					<div class="date-range">2003</div>
 					<div style="clear:both;"></div>
+				</section>
+				<section>
+					<header>
+						<h1>About Me</h1>
+						I really enjoy traveling and the outdoors &ndash; hiking, bike riding, camping, etc.  I recently went on a few road
+						trips to Rocky Mountain National Park, Colorado National Monument, Zion National Park, and Yosemite National Park.  
+						I love red wine and craft beer.  
+						I also really enjoy going to see live music and just bought a 2015 Lollapalooza ticket!
+					</header>
 				</section>
 			</article>
 		</div>
