@@ -21,6 +21,18 @@
 					<header>
 						<h1>Computer Science / Technical Skills</h1>
 					</header>
+					<div class="skills-section">Web languages:</div>
+					<div class="skills-value">PHP, HTML, CSS, JavaScript</div>
+					<div style="clear:both;"></div>
+					<div class="skills-section">Database:</div>
+					<div class="skills-value">MySQL, Postgres, Mongo</div>
+					<div style="clear:both;"></div>
+					<div class="skills-section">Other languages:</div>
+					<div class="skills-value">C, C++, Visual Basic, Intel &amp; 68K Assembly</div>
+					<div style="clear:both;"></div>
+					<div class="skills-section">Source control:</div>
+					<div class="skills-value">git, Subversion</div>
+					<div style="clear:both;"></div>
 				</section>
 				<section>
 					<header>
@@ -40,14 +52,12 @@
 						<div class="project-description">
 							I worked on every aspect of the FatWallet website (front end, back end, user facing pages, admin tools, reports).
 							<ul>
-								<li>The majority of my time was spent using PHP, MySQL, HTML, CSS, and JS</li>
+								<li>Majority of my time was spent using PHP, MySQL, HTML, CSS, and JS</li>
 								<li>Used the following JavaScript libraries frequently: jQuery, jQuery UI, jQuery Mobile, Ext.js, Facebook JavaScript SDK</li>
-								<li>Worked with various Google stuff: GA, GA event tracking, GTM, Google DFP</li>
-								<li>Was usually the go to guy for improving the performance of SQL queries</li>
-								<li>Facebook</li>
-								<li>OpenGraph</li>
-								<li>Agile, scrum</li>
-								<li>Other: svn, git, FBML, REST, CrazyEgg</li>
+								<li>Was the go-to guy for improving the performance of SQL queries</li>
+								<li>Wrote and consumed plenty of REST web services</li>
+								<li>Followed an agile methodology with Scrum meetings</li>
+								<li>Other things I worked with: svn, git, FBML, OpenGraph, CrazyEgg, GA, GA event tracking, GTM, Google DFP, Login with Facebook, FogBugz, Mantis, bugzilla, Jira, FishEye, Crucible, SourceTree</li>
 							</ul>
 						</div>
 					</div>
@@ -72,7 +82,7 @@
 							<span class="project-title">C.A.T.S. (Complex Anything Tracking System)</span> &ndash; FatWallet internal tool to track metrics
 						</div>
 						<div class="project-description">
-							...
+							Used PHP with Bootstrap for the UI and Mongo for the database.
 						</div>
 					</div>
 					<div class="project">
@@ -80,7 +90,7 @@
 							<span class="project-title"><a href="http://www.pushpinsapp.com/" target="_blank">PushPinsApp.com</a></span> &ndash; Website version of the Push Pins mobile app
 						</div>
 						<div class="project-description">
-							...
+							Worked on this website for a brief time that uses the Kohana PHP framework.
 						</div>
 					</div>
 					<hr>
@@ -136,6 +146,16 @@
 					<header>
 						<h1>Education</h1>
 					</header>
+					<div class="college">
+						<span class="college-degree">Bachelor of Science, General Computer Science</span>, Northern Illinois University
+					</div>
+					<div class="date-range">2006</div>
+					<div style="clear:both;"></div>
+					<div class="college">
+						<span class="college-degree">Associate of Arts</span>, Rock Valley College
+					</div>
+					<div class="date-range">2003</div>
+					<div style="clear:both;"></div>
 				</section>
 			</article>
 		</div>

@@ -8,7 +8,6 @@ nav {
 }
 .page {
 	background-color:#fff;
-	/*margin:0 10%;*/	
 	width:800px;
 	padding:30px;
 	border-left:1px solid #888;
@@ -24,6 +23,11 @@ h1 {
 	font-weight:bold;
 	font-size:1.5em;
 }
+.skills-section {
+	float:left;
+	width:180px;
+	font-weight:bold;
+}
 .position-company {
 	float:left;
 }
@@ -36,13 +40,16 @@ h1 {
 .project {
 	margin:0 20px;
 }
-.project-name {
-
-}
 .project-title {
 	font-style:italic;
 	font-weight:bold;
 }
 .project-description {
 	margin:10px 20px;
+}
+.college {
+	float:left;
+}
+.college-degree {
+	font-weight:bold;
 }
