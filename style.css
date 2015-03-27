@@ -1,15 +1,48 @@
 body {
 	background-color:#aaa;
 	margin:0;
+	font-family:Tahoma;
+}
+nav {
+	display:none;
 }
 .page {
 	background-color:#fff;
-	margin:0 10%;
+	/*margin:0 10%;*/	
+	width:800px;
+	padding:30px;
 	border-left:1px solid #888;
 	border-right:1px solid #888;
 	min-height:100vh;
+	margin:0 auto 30px auto;
 }
 .bio-pic {
 	text-align:center;
 	padding:20px 0;
+}
+h1 {
+	font-weight:bold;
+	font-size:1.5em;
+}
+.position-company {
+	float:left;
+}
+.position-title {
+	font-weight:bold;
+}
+.date-range {
+	float:right;
+}
+.project {
+	margin:0 20px;
+}
+.project-name {
+
+}
+.project-title {
+	font-style:italic;
+	font-weight:bold;
+}
+.project-description {
+	margin:10px 20px;
 }
