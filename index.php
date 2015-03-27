@@ -11,12 +11,22 @@
 	</head>
 	<body>
 		<div class="page">
-			<nav>
-				<div class="bio-pic">
-					<img src="i/ryan_jones1.jpg" width="128" border="0">
-				</div>
-			</nav>
 			<article>
+				<div class="page-heading">
+					<div class="bio-pic">
+						<img src="i/ryan_jones1.jpg" width="128" border="0">
+					</div>
+					<div class="bio-info">
+						<div class="bio-name">Ryan Jones</div>
+						<div class="bio-data">
+							<a href="mailto:ryan.c.jones@gmail.com">ryan.c.jones@gmail.com</a> | <a href="tel:18154843151">815.484.3151</a>
+						</div>
+						<div class="bio-data">
+							<a href="http://www.linkedin.com/in/voidpointer/en" target="_blank">LinkedIn</a> | <a href="http://www.facebook.com/voidpointer" target="_blank">Facebook</a>
+						</div>
+					</div>					
+					<div style="clear:both;"></div>
+				</div>
 				<section>
 					<header>
 						<h1>Overview</h1>
@@ -173,7 +183,7 @@
 						I really enjoy traveling and the outdoors &ndash; hiking, bike riding, camping, etc.  I recently went on a few road
 						trips to Rocky Mountain National Park, Colorado National Monument, Zion National Park, and Yosemite National Park.  
 						I love red wine and craft beer.  
-						I also really enjoy going to see live music and just bought a 2015 Lollapalooza ticket!
+						I also really enjoy going to see live music and just bought a 3 day pass to Lollapalooza 2015!
 					</header>
 				</section>
 			</article>
