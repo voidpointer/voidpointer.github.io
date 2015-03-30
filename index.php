@@ -43,7 +43,7 @@
 					programming languages, development environments, operating systems, libraries, and algorithms.  I always focus 
 					on writing code that is maintainable and reliable.  I love to learn and I'm always trying to learn more.  
 					Lately, I've been trying to learn more about iOS development, WordPress development, and React.js.  
-					(other topics currently on my radar are Ruby, Angular.js, Ember.js, and Swift)
+					(I'm also looking forward to learning more about Ruby, Angular.js and/or Ember.js, and Swift)
 				</section>
 				<section>
 					<header>
