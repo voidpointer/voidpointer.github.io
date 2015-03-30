@@ -54,7 +54,7 @@
 					<div class="skills-value">PHP, HTML, CSS, JavaScript</div>
 					<div style="clear:both;"></div>
 					<div class="skills-section">JavaScript libs:</div>
-					<div class="skills-value">jQuery, jQuery UI, jQuery Mobile</div>
+					<div class="skills-value">jQuery, jQuery UI, jQuery Mobile, Ext.js, Google Charts</div>
 					<div style="clear:both;"></div>
 					<div class="skills-section">Database:</div>
 					<div class="skills-value">MySQL, Postgres, Mongo</div>
@@ -87,7 +87,7 @@
 							I worked on every aspect of the FatWallet website (front end, back end, user facing pages, admin tools, reports).
 							<ul>
 								<li>Majority of my time was spent using PHP, MySQL, HTML, CSS, and JS</li>
-								<li>Used the following JavaScript libraries frequently: jQuery, jQuery UI, jQuery Mobile, Ext.js, tablesorter, Facebook JavaScript SDK</li>
+								<li>Used the following JavaScript libraries frequently: jQuery, jQuery UI, jQuery Mobile, Ext.js, Google Charts, tablesorter, Facebook JavaScript SDK</li>
 								<li>Was the go-to guy for improving the performance of SQL queries</li>
 								<li>Created and consumed plenty of REST web services</li>
 								<li>Followed an agile methodology with Scrum meetings</li>
