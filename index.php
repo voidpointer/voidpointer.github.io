@@ -32,8 +32,10 @@
 						<h1>Overview</h1>
 					</header>
 					Sixteen years experience developing, maintaining, and troubleshooting software. Experience includes various 
-					programming languages, development environments, operating systems, libraries, and algorithms.  I love to learn 
-					about new technologies.
+					programming languages, development environments, operating systems, libraries, and algorithms.  I always focus 
+					on writing code that is maintainable and reliable.  I love to learn and I'm always trying to learn more.  
+					Lately, I've been trying to learn more about iOS development, WordPress development, and React.js.  
+					(other topics currently on my radar are Ruby, Angular.js, Ember.js, and Swift)
 				</section>
 				<section>
 					<header>
@@ -75,10 +77,18 @@
 								<li>Majority of my time was spent using PHP, MySQL, HTML, CSS, and JS</li>
 								<li>Used the following JavaScript libraries frequently: jQuery, jQuery UI, jQuery Mobile, Ext.js, Facebook JavaScript SDK</li>
 								<li>Was the go-to guy for improving the performance of SQL queries</li>
-								<li>Wrote and consumed plenty of REST web services</li>
+								<li>Created and consumed plenty of REST web services</li>
 								<li>Followed an agile methodology with Scrum meetings</li>
 								<li>Other things I worked with: svn, git, FBML, OpenGraph, CrazyEgg, GA, GA event tracking, GTM, Google DFP, Login with Facebook, FogBugz, Mantis, bugzilla, Jira, FishEye, Crucible, SourceTree</li>
 							</ul>
+						</div>
+					</div>
+					<div class="project">
+						<div class="project-name">
+							<span class="project-title"><a href="http://www.fatwallet.com/local-deals/chicago/" target="_blank">FatWallet.com Local Deals</a></span> &ndash; Section of the site for "local" deals, e.g. Groupon
+						</div>
+						<div class="project-description">
+							Worked with a small team to rewrite the Local Deals section of FatWallet.  The original implementation relied on Sqoot and we rewrote it to get deals directly from the various provider APIs &ndash; Groupon, Living Social, AmazonLocal, Gilt City, and Restaurant.com.
 						</div>
 					</div>
 					<div class="project">
