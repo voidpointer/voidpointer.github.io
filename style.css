@@ -1,7 +1,7 @@
 body {
 	background-color:#aaa;
 	margin:0;
-	font-family:Tahoma;
+	font-family:Georgia, serif;
 }
 nav {
 	display:none;
@@ -38,6 +38,7 @@ nav {
 	color:#777;
 }
 h1 {
+	font-family:'Trebuchet MS', Helvetica, sans-serif;
 	font-weight:bold;
 	font-size:1.5em;
 }
