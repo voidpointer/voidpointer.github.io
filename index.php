@@ -4,6 +4,7 @@
 		<title>www.iamryanjones.com</title>
 		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8"> 
 		<meta property="og:title" content="Ryan Jones">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="http://www.iamryanjones.com">
@@ -22,7 +23,7 @@
 			<article>
 				<div class="page-heading">
 					<div class="bio-pic">
-						<img src="i/ryan_jones1.jpg" width="128" border="0">
+						<img src="i/ryan_jones1.jpg" width="128" alt="Ryan Jones">
 					</div>
 					<div class="bio-info">
 						<div class="bio-name">Ryan Jones</div>
@@ -37,7 +38,7 @@
 				</div>
 				<section>
 					<header>
-						<h1>Overview</h1>
+						<h2>Overview</h2>
 					</header>
 					Sixteen years experience developing, maintaining, and troubleshooting software. Experience includes various 
 					programming languages, development environments, operating systems, libraries, and algorithms.  I always focus 
@@ -47,10 +48,13 @@
 				</section>
 				<section>
 					<header>
-						<h1>Computer Science / Technical Skills</h1>
+						<h2>Computer Science / Technical Skills</h2>
 					</header>
 					<div class="skills-section">Web languages:</div>
 					<div class="skills-value">PHP, HTML, CSS, JavaScript</div>
+					<div style="clear:both;"></div>
+					<div class="skills-section">JavaScript libs:</div>
+					<div class="skills-value">jQuery, jQuery UI, jQuery Mobile</div>
 					<div style="clear:both;"></div>
 					<div class="skills-section">Database:</div>
 					<div class="skills-value">MySQL, Postgres, Mongo</div>
@@ -66,7 +70,7 @@
 				</section>
 				<section>
 					<header>
-						<h1>Professional Experience</h1>
+						<h2>Professional Experience</h2>
 					</header>
 					<div class="position-company">				
 						<span class="position-title">Senior Software Engineer</span>, FatWallet.com, Beloit, Wisconsin
@@ -83,7 +87,7 @@
 							I worked on every aspect of the FatWallet website (front end, back end, user facing pages, admin tools, reports).
 							<ul>
 								<li>Majority of my time was spent using PHP, MySQL, HTML, CSS, and JS</li>
-								<li>Used the following JavaScript libraries frequently: jQuery, jQuery UI, jQuery Mobile, Ext.js, Facebook JavaScript SDK</li>
+								<li>Used the following JavaScript libraries frequently: jQuery, jQuery UI, jQuery Mobile, Ext.js, tablesorter, Facebook JavaScript SDK</li>
 								<li>Was the go-to guy for improving the performance of SQL queries</li>
 								<li>Created and consumed plenty of REST web services</li>
 								<li>Followed an agile methodology with Scrum meetings</li>
@@ -182,7 +186,7 @@
 				</section>
 				<section>
 					<header>
-						<h1>Education</h1>
+						<h2>Education</h2>
 					</header>
 					<div class="college">
 						<span class="college-degree">Bachelor of Science, General Computer Science</span>, Northern Illinois University
@@ -197,7 +201,7 @@
 				</section>
 				<section>
 					<header>
-						<h1>About Me</h1>
+						<h2>About Me</h2>
 						I really enjoy traveling and the outdoors &ndash; hiking, bike riding, camping, etc.  I recently went on a few road
 						trips to Rocky Mountain National Park, Colorado National Monument, Zion National Park, and Yosemite National Park.  
 						I love red wine and craft beer.  
