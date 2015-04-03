@@ -43,8 +43,7 @@
 					Sixteen years experience developing, maintaining, and troubleshooting software. Experience includes various 
 					programming languages, development environments, operating systems, libraries, and algorithms.  I always focus 
 					on writing code that is maintainable and reliable.  I love to learn and I'm always trying to learn more.  
-					Lately, I've been trying to learn more about iOS development, WordPress development, and React.js.  
-					(I'm also looking forward to learning more about Ruby, Angular.js and/or Ember.js, and Swift)
+					Lately, I've been trying to learn more about iOS development, WordPress development, and React.js.					
 				</section>
 				<section>
 					<header>
