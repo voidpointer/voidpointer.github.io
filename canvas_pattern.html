@@ -1,16 +1,30 @@
 <!doctype html>
 <html>
 	<head>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 		<style>
-			canvas {
+			#myControls {
+				float:left;
+				width:128px;
+			}
+			#tileSizeSlider, #lineWidthSlider {
+				margin:20px;
+			}
+			#myCanvas {
+				float:left;
 				border:1px solid gray;
 			}
 		</style>
 		<script>
 			var CanvasApp = {
+				initialRandomSeed: 1,
 				tileSize: 64,
+				lineWidth: 3,
 				render: function() {
+					this.seed = this.initialRandomSeed;
+
 					var canvas = document.getElementById('myCanvas');
 					this.context = canvas.getContext('2d');
 
@@ -19,16 +33,16 @@
 					this.context.fillStyle = 'white';
 					this.context.fill();
 
-					this.context.lineWidth = 10;
+					this.context.lineWidth = this.lineWidth;
 					this.context.strokeStyle = 'black';
 
-			      	for(var x = 0; x < canvas.width / this.tileSize; x++)
-			      	{
-				      	for(var y = 0; y < canvas.height / this.tileSize; y++)
-				      	{
+					for(var x = 0; x < canvas.width / this.tileSize; x++)
+					{
+						for(var y = 0; y < canvas.height / this.tileSize; y++)
+						{
 							this.context.translate(x * this.tileSize, y * this.tileSize);
 
-							if (Math.random() < 0.5)
+							if (this.random() < 0.5)
 							{
 								this.renderPattern1();
 							}
@@ -38,10 +52,10 @@
 							}
 
 							this.context.setTransform(1, 0, 0, 1, 0, 0);
-				      	}
-		      		}			
-		      	},
-		      	renderPattern1 : function() {
+						}
+					}			
+				},
+				renderPattern1: function() {
 					this.context.beginPath();
 					this.context.moveTo(this.tileSize/2, 0);
 					this.context.bezierCurveTo(this.tileSize/2, this.tileSize/4, this.tileSize/4, this.tileSize/2, 0, this.tileSize/2);
@@ -52,8 +66,8 @@
 					this.context.bezierCurveTo(this.tileSize*3/4, this.tileSize/2, this.tileSize/2, this.tileSize*3/4, this.tileSize/2, this.tileSize);
 					this.context.stroke();
 
-		      	},
-		      	renderPattern2 : function() {
+				},
+				renderPattern2: function() {
 					this.context.beginPath();
 					this.context.moveTo(this.tileSize/2, 0);
 					this.context.bezierCurveTo(this.tileSize/2, this.tileSize/4, this.tileSize*3/4, this.tileSize/2, this.tileSize, this.tileSize/2);
@@ -63,15 +77,47 @@
 					this.context.moveTo(0, this.tileSize/2);
 					this.context.bezierCurveTo(this.tileSize/4, this.tileSize/2, this.tileSize/2, this.tileSize*3/4, this.tileSize/2, this.tileSize);
 					this.context.stroke();	
-		      	}
+				},
+				random: function() {
+					// From http://stackoverflow.com/questions/521295/javascript-random-seeds
+					var x = Math.sin(this.seed++) * 10000;
+					return x - Math.floor(x);
+				}
 			};
 
 			$(function(){
 				CanvasApp.render();
-	      	});
+
+				$('#tileSizeSlider').slider({
+					value: 3,
+					min: 1,
+					max: 5,
+					slide: function(event, ui) {
+						CanvasApp.tileSize = Math.pow(2, ui.value + 3);
+						CanvasApp.render();
+					}
+				});
+
+				$('#lineWidthSlider').slider({
+					value: 1,
+					min: 1,
+					max: 7,
+					slide: function(event, ui) {
+						CanvasApp.lineWidth = ui.value;
+						CanvasApp.render();
+					}
+				});
+			});
 		</script>
 	</head>
 	<body>
+		<div id="myControls">
+			Tile size:
+			<div id="tileSizeSlider"></div>
+			Line width:
+			<div id="lineWidthSlider"></div>
+			<button onclick="CanvasApp.initialRandomSeed = Math.random() * 1000;CanvasApp.render()">Mix Up Pattern</button>
+		</div>
 		<canvas id="myCanvas" width="512" height="512"></canvas>
 	</body>
 </html>
