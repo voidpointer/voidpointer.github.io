@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<style>
+			canvas {
+				border:1px solid gray;
+			}
+		</style>
+		<script>
+			var CanvasApp = {
+				tileSize: 64,
+				render: function() {
+					var canvas = document.getElementById('myCanvas');
+					this.context = canvas.getContext('2d');
+
+					this.context.beginPath();
+					this.context.rect(0, 0, canvas.width, canvas.height);
+					this.context.fillStyle = 'white';
+					this.context.fill();
+
+					this.context.lineWidth = 10;
+					this.context.strokeStyle = 'black';
+
+			      	for(var x = 0; x < canvas.width / this.tileSize; x++)
+			      	{
+				      	for(var y = 0; y < canvas.height / this.tileSize; y++)
+				      	{
+							this.context.translate(x * this.tileSize, y * this.tileSize);
+
+							if (Math.random() < 0.5)
+							{
+								this.renderPattern1();
+							}
+							else
+							{
+								this.renderPattern2();
+							}
+
+							this.context.setTransform(1, 0, 0, 1, 0, 0);
+				      	}
+		      		}			
+		      	},
+		      	renderPattern1 : function() {
+					this.context.beginPath();
+					this.context.moveTo(this.tileSize/2, 0);
+					this.context.bezierCurveTo(this.tileSize/2, this.tileSize/4, this.tileSize/4, this.tileSize/2, 0, this.tileSize/2);
+					this.context.stroke();
+
+					this.context.beginPath();
+					this.context.moveTo(this.tileSize, this.tileSize/2);
+					this.context.bezierCurveTo(this.tileSize*3/4, this.tileSize/2, this.tileSize/2, this.tileSize*3/4, this.tileSize/2, this.tileSize);
+					this.context.stroke();
+
+		      	},
+		      	renderPattern2 : function() {
+					this.context.beginPath();
+					this.context.moveTo(this.tileSize/2, 0);
+					this.context.bezierCurveTo(this.tileSize/2, this.tileSize/4, this.tileSize*3/4, this.tileSize/2, this.tileSize, this.tileSize/2);
+					this.context.stroke();
+
+					this.context.beginPath();
+					this.context.moveTo(0, this.tileSize/2);
+					this.context.bezierCurveTo(this.tileSize/4, this.tileSize/2, this.tileSize/2, this.tileSize*3/4, this.tileSize/2, this.tileSize);
+					this.context.stroke();	
+		      	}
+			};
+
+			$(function(){
+				CanvasApp.render();
+	      	});
+		</script>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="512" height="512"></canvas>
+	</body>
+</html>
