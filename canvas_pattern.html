@@ -25,20 +25,17 @@
 				render: function() {
 					this.seed = this.initialRandomSeed;
 
-					var canvas = document.getElementById('myCanvas');
-					this.context = canvas.getContext('2d');
+					this.canvas = document.getElementById('myCanvas');
+					this.context = this.canvas.getContext('2d');
 
-					this.context.beginPath();
-					this.context.rect(0, 0, canvas.width, canvas.height);
-					this.context.fillStyle = 'white';
-					this.context.fill();
+					this.clearCanvas();
 
 					this.context.lineWidth = this.tileSize / 2 * (this.lineWidth - 1) / 7 + 1;
 					this.context.strokeStyle = 'black';
 
-					for(var x = 0; x < canvas.width / this.tileSize; x++)
+					for(var x = 0; x < this.canvas.width / this.tileSize; x++)
 					{
-						for(var y = 0; y < canvas.height / this.tileSize; y++)
+						for(var y = 0; y < this.canvas.height / this.tileSize; y++)
 						{
 							this.context.translate(x * this.tileSize, y * this.tileSize);
 
@@ -77,6 +74,12 @@
 					this.context.moveTo(0, this.tileSize/2);
 					this.context.bezierCurveTo(this.tileSize/4, this.tileSize/2, this.tileSize/2, this.tileSize*3/4, this.tileSize/2, this.tileSize);
 					this.context.stroke();	
+				},
+				clearCanvas: function() {
+					this.context.beginPath();
+					this.context.rect(0, 0, this.canvas.width, this.canvas.height);
+					this.context.fillStyle = 'white';
+					this.context.fill();
 				},
 				random: function() {
 					// From http://stackoverflow.com/questions/521295/javascript-random-seeds
