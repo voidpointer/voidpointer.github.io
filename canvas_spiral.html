@@ -20,8 +20,8 @@
 		<script>
 			var CanvasApp = {
 				patternIndex: 1,
-				circleRadius: 9,
-				numPoints: 256,
+				circleRadius: 7,
+				numPoints: 512,
 				render: function() {
 					this.canvas = document.getElementById('myCanvas');
 					this.context = this.canvas.getContext('2d');
@@ -73,7 +73,7 @@
 				});
 
 				$('#circleRadiusSlider').slider({
-					value: 9,
+					value: 7,
 					min: 0,
 					max: 10,
 					slide: function(event, ui) {
@@ -91,6 +91,6 @@
 			Circle Radius:
 			<div id="circleRadiusSlider"></div>
 		</div>
-		<canvas id="myCanvas" width="512" height="512"></canvas>
+		<canvas id="myCanvas" width="1024" height="1024"></canvas>
 	</body>
 </html>
