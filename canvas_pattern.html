@@ -33,7 +33,7 @@
 					this.context.fillStyle = 'white';
 					this.context.fill();
 
-					this.context.lineWidth = this.lineWidth;
+					this.context.lineWidth = this.tileSize / 2 * (this.lineWidth - 1) / 7 + 1;
 					this.context.strokeStyle = 'black';
 
 					for(var x = 0; x < canvas.width / this.tileSize; x++)
@@ -101,7 +101,7 @@
 				$('#lineWidthSlider').slider({
 					value: 1,
 					min: 1,
-					max: 7,
+					max: 8,
 					slide: function(event, ui) {
 						CanvasApp.lineWidth = ui.value;
 						CanvasApp.render();
