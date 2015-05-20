@@ -73,3 +73,26 @@ h1 {
 .college-degree {
 	font-weight:bold;
 }
+
+@media print {
+	body {
+		background-color:#fff;
+	}
+	.page {
+		width:auto;
+		border:none;
+	}
+	a {
+		color:#000;
+	}
+}
+
+@media all and (max-device-width: 415px) {
+	body {
+		font-size:1.1em;
+	}
+	.page {
+		width:480px;
+		border:none;
+	}
+}
