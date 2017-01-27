@@ -11,15 +11,26 @@
 		<meta property="og:url" content="http://www.iamryanjones.com">
 		<meta property="og:image" content="i/ryan_jones1.jpg">
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		  ga('create', 'UA-61293735-1', 'auto');
-		  ga('send', 'pageview');
+			// email address
+			function populateEmail() {
+				var email = "ryfooan.cfoo.jonfooes@gmfooail.cofoom".replace(/foo/g, "");
+				var div = document.getElementById("email-container");
+				var a = document.createElement('a');
+				a.setAttribute('href',"mailto:" + email);
+				a.innerHTML = email;
+				div.appendChild(a);
+			}
+
+			// Google Analytics
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-61293735-1', 'auto');
+			ga('send', 'pageview');
 		</script>
 	</head>
-	<body>
+	<body onload="populateEmail()">
 		<div class="page">
 			<article>
 				<div class="page-heading">
@@ -28,8 +39,8 @@
 					</div>
 					<div class="bio-info">
 						<div class="bio-name"><h1>Ryan Jones</h1></div>
-						<div class="bio-data">
-							<a href="mailto:ryan.c.jones@gmail.com">ryan.c.jones@gmail.com</a> | <a href="tel:18154843151">815.484.3151</a>
+						<div class="bio-data" id="email-container">
+							<!-- email address goes here -->
 						</div>
 						<div class="bio-data">
 							<a href="http://www.linkedin.com/in/voidpointer/en" target="_blank">LinkedIn</a> | <a href="https://github.com/voidpointer/" target="_blank">GitHub</a> | <a href="http://www.facebook.com/voidpointer" target="_blank">Facebook</a>
@@ -50,7 +61,7 @@
 						<h2>Computer Science / Technical Skills</h2>
 					</header>
 					<div class="skills-section">Web languages:</div>
-					<div class="skills-value">PHP, HTML, CSS, JavaScript, Java/Spring</div>
+					<div class="skills-value">PHP, Java/Spring, Node.js, HTML, CSS, JavaScript</div>
 					<div style="clear:both;"></div>
 					<div class="skills-section">JavaScript libs:</div>
 					<div class="skills-value">jQuery, jQuery UI, jQuery Mobile, Ext.js, Google Charts</div>
