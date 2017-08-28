@@ -11,6 +11,20 @@ define(["FlashMode","IFrameMode","lobbyService"],function(FlashMode,IFrameMode,l
 		}else if((metaData.commtype !== undefined)&&(metaData.commtype == "VendorGameOnIFrame")){
 			wmsGame = new IFrameMode();
 			setTimeout(function(){wmsGame.gameLoadingStarted();},5000);
+			wmsGame.requestFromGame = function(event){
+				if((event.data !== undefined) && (this.targetOrigin == (event.origin || event.originalEvent.origin))){
+					if(event.data.event == "gameLoaded"){
+						this.gameLoadingStarted();
+						this.gameLoadingEnded();
+					}else if(event.data.event == "gameStarted"){
+						this.gameRoundStarted();
+					}else if(event.data.event == "gameCompleted"){
+						this.gameRoundEnded();
+					}else if(event.data.event == "closeGame"){
+						this.notifyCloseContainer();
+					}
+				}
+			}
 		}
 		wmsGame.loadVendorGame(inputData);
 	}
@@ -20,21 +34,6 @@ define(["FlashMode","IFrameMode","lobbyService"],function(FlashMode,IFrameMode,l
 			wmsGame.notifyGame(event,isFromGame);
 		}
 	}	
-
-	wmsGame.requestFromGame = function(event){
-		if((event.data !== undefined) && (this.targetOrigin == (event.origin || event.originalEvent.origin))){
-			if(event.data.event == "gameLoaded"){
-				this.gameLoadingStarted();
-				this.gameLoadingEnded();
-			}else if(event.data.event == "gameStarted"){
-				this.gameRoundStarted();
-			}else if(event.data.event == "gameCompleted"){
-				this.gameRoundEnded();
-			}else if(event.data.event == "closeGame"){
-				this.notifyCloseContainer();
-			}
-		}
-	}
 
 	return wmsController;
 });
