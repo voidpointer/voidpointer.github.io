@@ -27,8 +27,10 @@ nav {
 }
 .bio-info {
 	text-align:center;
+	padding-bottom:20px;
 }
 .bio-name h1 {
+	display:inline-block;
 	font:normal 2.0em Georgia, serif;
 	margin:0;
 }
@@ -37,6 +39,7 @@ nav {
 }
 .bio-data a {
 	color:#777;
+    line-height: 1.4em;
 }
 h1 {
 	font-family:'Trebuchet MS', Helvetica, sans-serif;
@@ -44,9 +47,10 @@ h1 {
 	font-size:1.5em;
 }
 .skills-section {
-	float:left;
-	width:180px;
 	font-weight:bold;
+}
+.skills-value {
+	padding:5px 0 15px 0;
 }
 .position-company {
 	float:left;
@@ -81,9 +85,14 @@ h1 {
 	.page {
 		width:auto;
 		border:none;
+		box-shadow:none;
 	}
 	a {
 		color:#000;
+		text-decoration:none;
+	}
+	.no-print {
+		display:none;
 	}
 }
 
